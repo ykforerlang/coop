@@ -13,6 +13,23 @@
 
 3. 下次进入应用的时候， 在 /src/index.js 的App组件 componentWillMount 发一个同步ajax请求获取登录态
 
+### 状态管理
+使用[redux](https://github.com/reactjs/redux)
+属性放在组件state带来简单性。 但是有些属性放在redux，具体怎么管理和业务息息相关。
+通用的参考条件如下:
+
+1. Do other parts of the application care about this data?
+比如应用有一个独立的打印数据的模块。
+2. Do you need to be able to create further derived data based on this original data?
+衍生属性基于redux， 更加容易优化。 参考 [repure](https://github.com/ykforerlang/repure), [reselect](https://github.com/reactjs/reselect)
+3. Is the same data being used to drive multiple components?
+组件间通信， 尤其是组件切分粒度越细， 通信问题越明显
+4. Is there value to you in being able to restore this state to a given point in time (ie, time travel debugging)?
+比如 在多个输入页面 切换的时候 需要保留没有保存的输入值
+5. Do you want to cache the data (ie, use what's in state if it's already there instead of re-requesting it)?
+存在redux的数据不会因为组件的销毁而丢失。 可以重复使用
+
+
 ### 路由
 1. 后台页的路由 配置在 /component/layout/Content.js
 2. 几个可选的路由组件
