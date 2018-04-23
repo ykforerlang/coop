@@ -1,0 +1,27 @@
+.content {
+    padding: 24px 32px;
+    background: #ffffff;
+}
+
+.content :global(.ant-row) {
+    margin-bottom: 32px;
+}
+
+.content :global(.ant-row:first-child) {
+    margin-bottom: 32px;
+    margin-top: 8px;
+}
+
+.label {
+    text-align: right;
+    height: 32px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+}
+
+@media screen and (max-width: 575px) {
+    .label {
+        text-align: left;
+    }
+}

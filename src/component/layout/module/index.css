@@ -1,0 +1,14 @@
+.left {
+    position: absolute;
+    z-index: 3;
+    transition: all 0.3s;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    background: #f0f2f5;
+    min-height: 100vh;
+    transition: left 0.3s;
+}
+

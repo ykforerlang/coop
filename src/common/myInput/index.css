@@ -1,0 +1,22 @@
+.out {
+    position: relative;
+}
+
+.out input {
+    padding-left: 10px;
+    border-radius: 2px;
+    background: inherit;
+    width: 100%;
+    outline: none;
+    border: 1px solid #b2bae2;
+}
+
+.inputLabel {
+    font-size: 12px;
+    color: #616989;
+    position: absolute;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    right: 10px;
+}

@@ -1,0 +1,20 @@
+.content {
+    margin: 24px;
+    overflow: hidden;
+}
+
+.optional {
+    color: rgba(0, 0, 0, 0.45);
+    font-style: normal;
+}
+
+.openOrNot :global(.ant-radio-group) {
+    line-height: 32px;
+}
+
+.openOrNotSpan {
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 1.5;
+    margin-top: 2px;
+    font-size: 14px;
+}

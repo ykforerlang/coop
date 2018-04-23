@@ -1,0 +1,98 @@
+{
+  "parser": "babel-eslint", // https://github.com/babel/babel-eslint
+  "extends": "eslint-config-airbnb",
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "globals": {
+    "expect": true,
+    "sinon": true,
+    "__DEV__": true
+  },
+  "rules": {
+    "semi": 0,
+    "arrow-parens": [2, "as-needed"],
+    "global-require": 0,
+    "comma-dangle": 1,
+    "import/prefer-default-export": 0,
+    "no-shadow": 1,                  // http://eslint.org/docs/rules/no-shadow
+    "no-shadow-restricted-names": 2, // http://eslint.org/docs/rules/no-shadow-restricted-names
+    "no-undef": 1,                   // http://eslint.org/docs/rules/no-undef
+    "no-unused-vars": [1, {          // http://eslint.org/docs/rules/no-unused-vars
+      "vars": "local",
+      "args": "after-used"
+    }],
+    "no-use-before-define": 1,       // http://eslint.org/docs/rules/no-use-before-define
+
+    /**
+     * Possible errors
+     */
+    "no-cond-assign": [1, "always"], // http://eslint.org/docs/rules/no-cond-assign
+    "no-console": 1,                 // http://eslint.org/docs/rules/no-console
+    "no-debugger": 1,                // http://eslint.org/docs/rules/no-debugger
+    "no-alert": 1,                   // http://eslint.org/docs/rules/no-alert
+    "no-constant-condition": 1,      // http://eslint.org/docs/rules/no-constant-condition
+    "no-dupe-keys": 1,               // http://eslint.org/docs/rules/no-dupe-keys
+    "no-duplicate-case": 1,          // http://eslint.org/docs/rules/no-duplicate-case
+    "no-empty": 1,                   // http://eslint.org/docs/rules/no-empty
+    "no-ex-assign": 1,               // http://eslint.org/docs/rules/no-ex-assign
+    "no-extra-boolean-cast": 0,      // http://eslint.org/docs/rules/no-extra-boolean-cast
+    "no-extra-semi": 1,              // http://eslint.org/docs/rules/no-extra-semi
+    "no-func-assign": 1,             // http://eslint.org/docs/rules/no-func-assign
+    "no-inner-declarations": 1,      // http://eslint.org/docs/rules/no-inner-declarations
+    "no-invalid-regexp": 1,          // http://eslint.org/docs/rules/no-invalid-regexp
+    "no-irregular-whitespace": 1,    // http://eslint.org/docs/rules/no-irregular-whitespace
+    "no-obj-calls": 1,               // http://eslint.org/docs/rules/no-obj-calls
+    "no-sparse-arrays": 1,           // http://eslint.org/docs/rules/no-sparse-arrays
+    "no-unreachable": 1,             // http://eslint.org/docs/rules/no-unreachable
+    "use-isnan": 1,                  // http://eslint.org/docs/rules/use-isnan
+    "block-scoped-var": 1,           // http://eslint.org/docs/rules/block-scoped-var
+
+
+    /**
+     * Style
+     */
+    "indent": [
+      1,
+      4,
+      { "SwitchCase": 1 }
+    ],                              // http://eslint.org/docs/rules/indent
+    "brace-style": [
+      1,
+      "1tbs", {
+        "allowSingleLine": true
+      }
+    ],                               // http://eslint.org/docs/rules/brace-style
+    // React
+    "jsx-quotes": [1, "prefer-double"],
+    "react/display-name": 0,
+    "react/jsx-boolean-value": 1,
+    "react/jsx-no-undef": 1,
+    "react/jsx-sort-prop-types": 0,
+    "react/jsx-sort-props": 0,
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1,
+    //"react/no-did-mount-set-state": [1, "allow-in-func"],
+    "react/no-did-update-set-state": 1,
+    "react/no-multi-comp": 1,
+    "react/no-unknown-property": 1,
+    "react/prop-types": 0,
+    "react/react-in-jsx-scope": 1,
+    "react/require-default-props": 0,
+    "react/self-closing-comp": 1,
+    "react/sort-comp": 1,
+    "react/jsx-indent": [2, 4],
+    "react/jsx-indent-props": [2, 4],
+    "react/jsx-filename-extension": 0,
+    //"react/wrap-multilines": 2
+
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/anchor-is-valid": 0
+  },
+  "plugins": [
+    "react"
+  ]
+}

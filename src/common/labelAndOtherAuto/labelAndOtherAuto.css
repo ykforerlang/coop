@@ -1,0 +1,15 @@
+.out {
+    margin-bottom: 24px;
+}
+
+.label {
+    float: left;
+    padding-right: 8px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.componentWrapper {
+    overflow: hidden;
+    line-height: 32px;
+}
